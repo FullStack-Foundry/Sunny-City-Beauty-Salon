@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function ContactInfo({ fadeInUp }: { fadeInUp: FadeInUp }) {
   return (
-    <section className="py-24 px-6">
+    <section className="py-16 px-6">
       <div className="max-w-3xl mx-auto">
         <motion.div
           initial="hidden"
@@ -15,9 +15,9 @@ export default function ContactInfo({ fadeInUp }: { fadeInUp: FadeInUp }) {
           className="text-center"
         >
           <h2 className="text-4xl font-serif mb-12 text-foreground font-light">
-            Visit Us
+            Location & Business Hours
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 text-center">
             <div>
               <h4 className="text-primary font-sans uppercase tracking-widest text-xs mb-3">
                 Address
@@ -37,17 +37,6 @@ export default function ContactInfo({ fadeInUp }: { fadeInUp: FadeInUp }) {
                 <br />
                 Sat &ndash; Sun : 10:00am &ndash; 6:00pm
               </p>
-            </div>
-            <div>
-              <h4 className="text-primary font-sans uppercase tracking-widest text-xs mb-3">
-                Phone
-              </h4>
-              <a
-                href="tel:6463868898"
-                className="text-foreground font-serif text-lg hover:text-primary transition-colors"
-              >
-                646-386-8898
-              </a>
             </div>
           </div>
         </motion.div>

@@ -54,20 +54,21 @@ export default function Services({ fadeInUp }: { fadeInUp: FadeInUp }) {
             <motion.div
               key={idx}
               variants={fadeInUp}
-              className="flex justify-between items-end border-b border-border/60 pb-4 group"
+              className="border-b border-border/60 pb-4 group"
             >
-              <h3 className="text-lg md:text-xl font-serif text-foreground group-hover:text-primary transition-colors">
-                {service.name}
-                {service.name === "Coloring" && (
-                  <span className="sm:text-md text-muted-foreground italic">
-                    {" "}
-                    (price not applicable to special colors)
-                  </span>
-                )}
-              </h3>
-              <span className="text-muted-foreground font-light tracking-wide text-sm md:text-base">
-                {service.price}
-              </span>
+              <div className="flex justify-between items-end">
+                <h3 className="text-lg md:text-xl font-serif text-foreground group-hover:text-primary transition-colors">
+                  {service.name}
+                </h3>
+                <span className="text-muted-foreground font-light tracking-wide text-sm md:text-base">
+                  {service.price}
+                </span>
+              </div>
+              {service.name === "Coloring" && (
+                <span className="text-sm text-muted-foreground italic md:text-base">
+                  (price not applicable to special colors)
+                </span>
+              )}
             </motion.div>
           ))}
         </motion.div>
