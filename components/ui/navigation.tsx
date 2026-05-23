@@ -23,7 +23,7 @@ export default function Navigation({ langHandler, company, phone }: Props) {
         </a>
         <div className="flex flex-row gap-2 sm:gap-4">
           <button
-            className={`border border-primary rounded-sm px-2 py-1 text-xs sm:text-sm ${!isEnglish && "bg-amber-200"}`}
+            className={`border border-primary rounded-sm px-2 py-1 text-xs cursor-pointer sm:text-sm ${!isEnglish && "bg-amber-200"}`}
             onClick={() => {
               langHandler("zh-HK");
               setIsEnglish(false);
@@ -32,7 +32,7 @@ export default function Navigation({ langHandler, company, phone }: Props) {
             中国人
           </button>
           <button
-            className={`border border-primary rounded-sm px-2 py-1 text-xs sm:text-sm ${isEnglish && "bg-amber-200"}`}
+            className={`border border-primary rounded-sm px-2 py-1 cursor-pointer text-xs sm:text-sm ${isEnglish && "bg-amber-200"}`}
             onClick={() => {
               langHandler("en");
               setIsEnglish(true);

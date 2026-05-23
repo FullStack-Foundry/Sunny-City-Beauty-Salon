@@ -30,6 +30,8 @@ export default function BackgroundSection({
           alt="Sunny City Beauty Salon"
           className="w-full h-full object-cover object-center"
           fill
+          quality={50}
+          loading="eager"
         />
       </motion.div>
       <div className={className || DEFAULT_STYLING}>{children}</div>

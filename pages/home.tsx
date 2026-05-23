@@ -42,7 +42,11 @@ export default function Home() {
 
       {/* Booking Banner — Near Top */}
 
-      <About fadeInUp={fadeInUp} />
+      <About
+        fadeInUp={fadeInUp}
+        header={t("about.header")}
+        body={t("about.body")}
+      />
 
       <Services fadeInUp={fadeInUp} />
 
